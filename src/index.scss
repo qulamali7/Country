@@ -1,0 +1,26 @@
+* {
+  font-family: 'Nunito Sans', sans-serif;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body{
+  background-color: var(--head-back);
+}
+:root{
+  --head-back:#fff;
+  --home-back:#fafafa;
+  --text-color:#111517;
+}
+.dark{
+  --head-back:#2B3844;
+  --home-back:#202C36;
+  --text-color:#fff;
+}

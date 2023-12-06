@@ -1,0 +1,147 @@
+#search {
+  margin: 20px 0px;
+
+  .search_content {
+    max-width: 1280px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &_input {
+      width: 480px;
+      height: 56px;
+      border-radius: 5px;
+      background: var(--head-back);
+      box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.05);
+
+      &_iconinp {
+        padding: 15px 20px;
+
+        i {
+          color: var(--text-color);
+        }
+
+        input {
+          color: var(--text-color);
+          font-size: 20px;
+          border: none;
+          outline: none;
+          margin-left: 10px;
+          background-color: var(--head-back);
+        }
+      }
+    }
+
+    select {
+      background-color: var(--head-back);
+      color: var(--text-color);
+      border: none;
+      outline: none;
+      font-size: 16px;
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+  }
+}
+
+#country {
+  .cards {
+    max-width: 1280px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 50px;
+  }
+}
+
+@media (max-width: 375px) {
+  #search {
+    .search_content {
+      flex-direction: column;
+      gap: 20px;
+
+      &_input {
+        width: 240px;
+
+        &_iconinp {
+          padding: 15px 10px;
+
+          input {
+            padding: 0px;
+            font-size: 16px;
+          }
+        }
+
+      }
+    }
+  }
+
+  #country {
+    .cards {
+      width: 80%;
+      justify-content: center;
+    }
+  }
+}
+
+@media (min-width: 375px) and (max-width:768px) {
+  #search {
+    .search_content {
+      width: 80%;
+      margin: auto;
+
+      &_input {
+        width: 240px;
+
+        &_iconinp {
+          padding: 15px 10px;
+
+          input {
+            padding: 0px;
+            font-size: 16px;
+          }
+        }
+
+      }
+    }
+  }
+
+  #country {
+    .cards {
+      width: 80%;
+      justify-content: center;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width:1024px) {
+  #search {
+    .search_content {
+      width: 80%;
+      margin: auto;
+
+      &_input {
+        width: 240px;
+
+        &_iconinp {
+          padding: 15px 10px;
+
+          input {
+            padding: 0px;
+            font-size: 16px;
+          }
+        }
+
+      }
+    }
+  }
+
+  #country {
+    .cards {
+      justify-content: center;
+    }
+  }
+}
